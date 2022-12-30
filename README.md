@@ -125,9 +125,11 @@ def img_to_img():
 ```
 
 Input image:
+
 ![Input image](docs/images/input.jpeg "Input image")
 
 Input guided prompt: *`A fantasy house, trending on artstation`*.
 
 Output:
+
 ![Image-to-Image output](docs/images/img2img-output.png  "Image-to-Image output")
