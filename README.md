@@ -1,6 +1,6 @@
 # stadiff-aws
 
-Self-hosted Stable Diffusion by Python Flask on AWS G4 EC2 instance (which is powered by NVIDIA T4 GPUs) provisioned by Terraform
+Self-hosted Stable Diffusion using Python Flask on AWS G4 EC2 instance (which is powered by NVIDIA T4 GPUs) provisioned by Terraform
 
 <!-- [ ] Add Overview
 [ ] Demo main feature text to image
