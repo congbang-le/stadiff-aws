@@ -4,7 +4,7 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
-# Update the path to your ssh private key here
+# Variables
 ssh_private_key=$(pwd)"/keys/demo-key"
 
 # Parameters
