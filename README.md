@@ -61,7 +61,7 @@ Let's try with the prompt "a bar in a middle of a tropical forest", then adjust 
 
 ![Image generated](docs/images/getting-started.png  "Image generated")
 
-### 4. Delete instance after testing
+### 4. Delete AWS EC2 instance after testing
 
 ```bash
 cd infra
