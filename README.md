@@ -8,6 +8,13 @@ Self-hosted Stable Diffusion using Python Flask on AWS G4 EC2 instance (which is
 
 ## Overview
 
+This project includes:
+
+- [app.py](app.py): Flask application serves [Stable Diffusion model](https://github.com/Stability-AI/stablediffusion) from [Diffusers package](https://github.com/huggingface/diffusers).
+- [frontend](frontend/): Simple form for users to input the `prompt` which is used to generate image.Developed with HTML, CSS and JS.
+- [infra](infra/): Terraform code and some scripts to automatically provisioned AWS G4 instance which has NVIDIA T4 GPUs to run the `app.py`.
+
+
 ## Getting started
 
 ### 1. Configure AWS access key
