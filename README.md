@@ -1,6 +1,6 @@
 # stadiff-aws
 
-Self-hosted Stable Diffusion using Python Flask on AWS G4 EC2 instance (which is powered by NVIDIA T4 GPUs) provisioned by Terraform
+Self-hosted Stable Diffusion using Python Flask on AWS G4 EC2 instance (which is powered by NVIDIA T4 GPUs) provisioned by Terraform.
 
 <!-- [X] Add Overview
 [ ] Demo main feature text to image
@@ -16,11 +16,14 @@ This project includes:
 
 ## Getting started
 
+### 0. Prerequisite
+
+- Install [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli).
+- Create [AWS Access key and Secret key](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-appendix-sign-up.html).
+
 ### 1. Configure AWS access key
 
-Create AWS access key in this [link](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-appendix-sign-up.html).
-
-Configure your AWS access key and secret key to run Terraform. If you have `aws cli` in your machine, you can run this command:
+If you have `aws cli` in your machine, you can run this command:
 
 ```bash
 aws configure
@@ -35,14 +38,14 @@ export AWS_SECRET_ACCESS_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ### 2. Run all-in-one deployment script
 
-To create the EC2 instance and host the Flask application for using Stable Diffusion, you can do like this:
+To create the EC2 instance and host the Flask application, you can do like this:
 
 ```bash
 cd infra
 bash helpers.sh deploy
 ```
 
-After the script is completed, you can see the url in the output
+After the script finish executing, you can see the URL in the output
 
 ```bash
 ...
@@ -62,8 +65,15 @@ Let's try with the prompt "a bar in a middle of a tropical forest", then adjust 
 
 ![Image generated](docs/images/getting-started.png  "Image generated")
 
+### 4. Delete instance after testing
+
+```bash
+cd infra
+bash helpers.sh destroy
+```
+
 ## Main features
 
 ### Text-to-Image
 
-### Image-to-
+### Image-to-Image
